@@ -1,0 +1,4 @@
+Sphinx>=1.8.0
+m2r>=0.2.1
+sphinx-js>=2.7.1
+sphinx_rtd_theme>=0.4.2

@@ -1,0 +1,9 @@
+{
+  "full_name": "Sebastian Weigand",
+  "email": "s.weigand.phy@gmail.com",
+  "github_username": "s-weigand",
+  "project_name": "kebab-case-project-name",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
+  "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+  "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+}
