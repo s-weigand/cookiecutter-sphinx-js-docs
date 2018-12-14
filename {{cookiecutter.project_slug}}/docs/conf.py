@@ -23,9 +23,12 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 
 # -- javascript/TypeScript specific configuration ---------------------- 
-
+import json
 with open("../package.json") as f: 
     package = json.load(f)
+
+# Comment the next line if you are using pure javascript
+js_language = 'typescript'
     
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
