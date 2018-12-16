@@ -27,8 +27,26 @@ import json
 with open("../package.json") as f: 
     package = json.load(f)
 
+# -- jsdoc or typedoc specific configuration
+
+# JSDOC
+# path to the jsdoc config file
+# jsdoc_config_path='./jsdoc.json'
+
+# TYPEDOC
+# path to the tsconfig.json file which should at least contain 
+# the following minimal typedocOptions :
+# "typedocOptions": {
+#    "module": "commonjs"
+#  },
+jsdoc_config_path='../tsconfig.json'
+
 # Comment the next line if you are using pure javascript
 js_language = 'typescript'
+
+# This letz you save js namespace in directives like '.. js:autoclass::'
+# if your project in pure js projects, so you can just use '.. autoclass::' 
+primary_domain = 'js'
     
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
