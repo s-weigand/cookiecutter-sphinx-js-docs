@@ -25,7 +25,7 @@ and
 1. Initializing the docs
     Open a terminal/git-bash in the root folder of your project and run:
 
-        `cookiecutter gh:s-weigand/cookiecutter-sphinx-js-docs`
+    `cookiecutter gh:s-weigand/cookiecutter-sphinx-js-docs`
 
     This will create the `.readthedocs.yml` for the documentation to work with 
     [readthedocs](https://readthedocs.org/) 
@@ -34,7 +34,7 @@ and
 2. Generating docs
     
     Change in the docs folder (`cd docs`) and run:    
-    * Linux/OsX/MinGW
+    * Linux/OsX/MinGW with make capability (see: [this Guide](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058))
     
         `make html`
         
@@ -42,7 +42,19 @@ and
     
         `make.bat html`
 
+#### Notes on the initial configuration
+
+The initial configuration is set up for a pure `typescript` project.
+
+With the source files contained in the `src` directory  in the root directory of the project.
+It is also assumed that the root directory of the project containes a `package.json` and a 
+`tsconfig.json`, which contains at least a minimal configuration for typedoc as follows:
+```
+  "typedocOptions": {
+    "module": "commonjs"
+  },
+```
 
 ## Credits
 
-This cookiecutter template is based on [cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
+This cookiecutter template is based on [cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage).
