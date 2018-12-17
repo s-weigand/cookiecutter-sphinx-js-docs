@@ -1,5 +1,6 @@
 # cookiecutter-sphinx-js-docs
-Cookiecutter template for generating documentattion for javascript/TypeScript projects with sphinx-js, 
+Cookiecutter template for generating documentattion for javascript/TypeScript projects with 
+[sphinx-js](https://github.com/mozilla/sphinx-js), 
 wich also works with [readthedocs](https://readthedocs.org/)
 
 ## Prerequirements
@@ -57,4 +58,5 @@ It is also assumed that the root directory of the project containes a `package.j
 
 ## Credits
 
-This cookiecutter template is based on [cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage).
+This cookiecutter template is based on 
+[cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage).
